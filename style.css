@@ -30,6 +30,31 @@ text-align:center;
 
 }
 
+.container{
+
+animation:fadeUp .8s ease;
+
+}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(20px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
 .logo{
 
 width:96px;
@@ -38,9 +63,20 @@ height:96px;
 
 margin-bottom:30px;
 
-border-radius:22px;
+border-radius:24px;
 
-box-shadow:0 20px 60px rgba(0,0,0,.45);
+box-shadow:
+
+0 24px 70px rgba(0,0,0,.55),
+
+0 0 40px rgba(17,197,163,.08);
+
+transition:.35s;
+
+}
+.logo:hover{
+
+transform:scale(1.03);
 
 }
 
@@ -199,6 +235,14 @@ gap:14px;
 
 .links a{
 
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+gap:12px;
+
 padding:18px;
 
 background:#11151B;
@@ -211,11 +255,24 @@ color:white;
 
 transition:.25s;
 
+font-weight:500;
+
+}
+
+
+.links i{
+
+font-size:20px;
+
+color:#11C5A3;
+
 }
 
 .links a:hover{
 
 background:#1A2028;
+
+transform:translateY(-3px);
 
 }
 
