@@ -364,3 +364,33 @@ margin-top:4px;
 color:#9AA5B4;
 
 }
+
+body::before{
+
+content:"";
+
+position:fixed;
+
+top:-300px;
+
+left:50%;
+
+transform:translateX(-50%);
+
+width:700px;
+
+height:700px;
+
+background:
+
+radial-gradient(circle,
+
+rgba(17,197,163,.09),
+
+transparent 70%);
+
+pointer-events:none;
+
+z-index:-1;
+
+}
