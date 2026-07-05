@@ -183,7 +183,6 @@ ul li strong {
   display: flex;
   flex-direction: column;
   gap: 14px;
-  text-decoration: none;
 }
 
 .links a {
@@ -203,7 +202,6 @@ ul li strong {
 .links i {
   font-size: 20px;
   color: #11C5A3;
-  text-decoration: none;
 }
 
 .links a:hover {
